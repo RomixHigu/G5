@@ -1,0 +1,18 @@
+package com.desafiolatam;
+
+import modelos.Alumno;
+import servicios.AlumnoServicio;
+
+public class Main {
+
+	public static void main(String[] args) {
+		AlumnoServicio alumnoServi = new AlumnoServicio();
+		Alumno alumno = new Alumno();
+		
+		alumnoServi.crearAlumno(alumno);
+
+	}
+	
+	
+
+}

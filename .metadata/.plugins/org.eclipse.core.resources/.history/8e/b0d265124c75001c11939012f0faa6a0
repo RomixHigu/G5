@@ -1,0 +1,24 @@
+package Modelo;
+
+import Servicio.Datos;
+
+public class Calculadora {
+	
+	
+	public void sumar(Datos datos) {
+		
+	}
+	
+	public void restar(Datos datos) {
+		
+	}
+	
+	public void dividir(Datos datos) {
+		
+	}
+	
+	public void multiplicar(Datos datos) {
+		
+	}
+
+}

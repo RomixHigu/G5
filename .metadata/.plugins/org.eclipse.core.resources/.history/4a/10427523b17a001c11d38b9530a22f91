@@ -1,0 +1,88 @@
+package vista;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import modelo.CategoriaEnum;
+import modelo.Cliente;
+import servicio.ArchivoServicio;
+import servicio.ClienteServicio;
+import servicio.ExportadorCsv;
+import servicio.ExportadorTxt;
+
+public class Menu extends MenuTemplate {
+	private ClienteServicio clienteServicio = new ClienteServicio();
+	private ArchivoServicio archivoServicio = new ArchivoServicio();
+	private ExportadorCsv csv = new ExportadorCsv();
+	private ExportadorTxt txt = new ExportadorTxt();
+	private String fileName="Clientes.txt";
+	private String fileName1 = "DBClientes.csv";
+	private static final String ACTIVO = "Activo";
+	private static final String INACTIVO = "Inactivo";
+
+
+	@Override
+	public void listarCliente() {		
+		System.out.println(clienteServicio.getListaCliente());
+		
+	}
+
+	@Override
+	public void agregarCliente(Cliente cliente) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Ingrese RUN del cliente");
+		String run = sc.nextLine();
+		System.out.println("Ingrese nombre del cliente");
+		String nombre = sc.nextLine();
+		System.out.println("Ingrese apellido del cliente");
+		String apellido = sc.nextLine();
+		System.out.println("Ingrese años como cliente");
+		Integer antiguedad = sc.nextInt();
+		System.out.println("Ingrese estado del cliente");
+		String estado = sc.next();
+		if(estado.equalsIgnoreCase(ACTIVO)){
+			cliente.setCategoria(CategoriaEnum.ACTIVO);			
+		}else if(estado.equalsIgnoreCase(INACTIVO)){
+			cliente.setCategoria(CategoriaEnum.INACTIVO);
+		}else {
+			System.out.println("Ingrese activo o inactivo");
+		}
+		
+		cliente.setRun(run);
+		cliente.setNombre(nombre);
+		cliente.setApellido(apellido);
+		cliente.getAntiguedad();
+		
+		clienteServicio.agregarCliente(cliente);
+		
+	}
+
+	@Override
+	public void editarCliente() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void importarDatos() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void exportarDatos() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void terminarPrograma() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	
+}

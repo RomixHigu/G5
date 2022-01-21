@@ -1,0 +1,24 @@
+Articulo: hgh
+Precio: hg
+Descripcion: hg
+Codigo: hg
+Talla: hg
+Marca: hg
+Color: hg
+
+Articulo: hgh
+Precio: hg
+Descripcion: hg
+Codigo: hg
+Talla: hg
+Marca: hg
+Color: hg
+
+Articulo: hgh
+Precio: hg
+Descripcion: hg
+Codigo: hg
+Talla: hg
+Marca: hg
+Color: hg
+

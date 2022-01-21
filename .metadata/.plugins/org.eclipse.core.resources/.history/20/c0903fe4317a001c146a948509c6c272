@@ -1,0 +1,9 @@
+package servicio;
+
+public class ArchivoServicio {
+	
+	public void cargarDatos (String fileName) {
+		//file y buffered reader
+	}
+
+}

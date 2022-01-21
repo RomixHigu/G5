@@ -1,0 +1,48 @@
+package vistas;
+
+import servicios.AlumnoServicio;
+import servicios.ArchivoServicio;
+
+public class Menu extends MenuTemplate{
+	
+	//private Utilidades util;
+	private AlumnoServicio alumnoServicio;
+	private ArchivoServicio archivoServicio;
+
+	@Override
+	public void cargarDatos() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void crearAlumno() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void agregarMateria() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void agregarNota() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void exportarDatos() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void terminarPrograma() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

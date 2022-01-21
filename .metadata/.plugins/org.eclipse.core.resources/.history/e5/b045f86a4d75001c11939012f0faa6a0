@@ -1,0 +1,28 @@
+package Modelo;
+
+import Servicio.Datos;
+
+public class Calculadora {
+	
+	
+public int sumar(Datos datos) {
+		
+		int suma = datos.getNumero1() + datos.getNumero2();
+		return 0;
+	}
+	
+	public int restar(Datos datos) {
+		int resta = datos.getNumero1() - datos.getNumero2();
+		return 0;
+	}
+	
+	public int multiplicar(Datos datos) {
+		int multi = datos.getNumero1() * datos.getNumero2();
+		return 0;
+	}
+	
+	public double Dividir (Datos datos) {
+		double div = (double) (datos.getNumero1() / datos.getNumero2());
+		return 0;
+	}
+}

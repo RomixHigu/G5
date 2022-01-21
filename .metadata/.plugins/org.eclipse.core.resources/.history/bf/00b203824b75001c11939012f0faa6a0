@@ -1,0 +1,15 @@
+package com.desafiolatam.Calculadora2;
+
+import org.junit.jupiter.api.Test;
+
+import Modelo.Calculadora;
+
+public class CalculadoraTest {
+	
+	@Test
+	public void testRestar() {
+		Calculadora calculadora = new Calculadora();
+		
+	}
+
+}

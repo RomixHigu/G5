@@ -1,0 +1,87 @@
+package com.desafiolatam;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.TreeMap;
+
+import modelos.Alumno;
+import modelos.Materia;
+import modelos.MateriaEnum;
+
+public class AlumnoServicio {
+	private Map<String, Alumno> listaAlumnos;
+
+	public AlumnoServicio() {
+		super();
+		listaAlumnos = new TreeMap<>();
+	}
+
+	public AlumnoServicio(Map<String, Alumno> listaAlumnos) {
+		super();
+		this.listaAlumnos = listaAlumnos;
+		// listaProductos = new ArrayList<Producto>();
+	}
+
+	public Map<String, Alumno> getListaAlumnos() {
+		return listaAlumnos;
+	}
+
+	public void setListaAlumno(Map<String, Alumno> listaAlumnos) {
+		this.listaAlumnos = listaAlumnos;
+	}
+
+	public void crearAlumno() {
+		Scanner sc = new Scanner(System.in);
+		MateriaEnum mate;
+
+		System.out.println("Ingrese rut del alumno");
+		String rut = sc.nextLine();
+		System.out.println("Ingrese Nombre del Alumno");
+		String nombre = sc.nextLine();
+		System.out.println("Ingrese Apellido del Alumno");
+		String apellido = sc.nextLine();
+		System.out.println("Ingrese direccion del Alumno");
+		String direccion = sc.nextLine();
+		System.out.println("Ingrese Materia");
+		String asignatura = sc.nextLine();
+		switch (asignatura) {
+		case "matematicas":
+			mate = MateriaEnum.MATEMATICAS;
+			break;
+		case "lenguaje":
+			mate = MateriaEnum.LENGUAJE;
+			break;
+		case "Ciencias":
+			mate = MateriaEnum.CIENCIAS;
+			break;
+		case "Historia":
+			mate = MateriaEnum.HISTORIA;
+			break;
+		}
+		System.out.println("Ingrese promedio de " + asignatura);
+
+		alumno.setRut(rut);
+		alumno.setNombre(nombre);
+		alumno.setApellido(apellido);
+		alumno.setDireccion(direccion);
+		
+
+		listaAlumnos.put(rut, alumno);
+		System.out.println("Datos ingresados con exito!");
+	}
+
+	public void agregarMAteria(String rutAlumno, Materia currentMate) {
+
+	}
+
+	public List<MateriaEnum> materiasPorAlumno(String rutAlumno) {
+		List<MateriaEnum> materias = new ArrayList<>();
+		return materias;
+	}
+
+	public Map<String, Alumno> listarAlumnos() {
+		return listaAlumnos;
+	}
+}

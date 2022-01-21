@@ -1,0 +1,84 @@
+package vistas;
+
+
+
+import modelos.Alumno;
+import servicios.AlumnoServicioImp;
+import servicios.ArchivoServicio;
+
+public class Menu extends MenuTemplate{
+	
+	//private Utilidades util;
+	private AlumnoServicioImp alumnoServicio;
+	private ArchivoServicio archivoServicio;
+
+	@Override
+	public void cargarDatos() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void crearAlumno() {
+		
+		System.out.println("Ingrese Rut del alumno");
+		String rut = sc.nextLine();
+		System.out.println("Ingrese Nombre del Alumno");
+		String nombre = sc.nextLine();
+		System.out.println("Ingrese Apellido del Alumno");
+		String apellido = sc.nextLine();
+		System.out.println("Ingrese direccion del Alumno");
+		String direccion = sc.nextLine();
+		System.out.println("Ingrese Materia");
+		String asignatura = sc.nextLine();
+		
+		Alumno alumno = new Alumno(rut,nombre,apellido,direccion,null);
+		alumnoServicio.crearAlumno(alumno);
+	}
+	
+	@Override
+	public void listarAlumno() {
+		alumnoServicio.listarAlumnos().entrySet().forEach(entry -> {
+		Alumno alumno = entry.getValue();
+		System.out.println("Rut: "+ alumno.getRut());
+		System.out.println("Nombre: "+ alumno.getNombre());
+		System.out.println("Apellido: "+ alumno.getApellido());
+		System.out.println("Direccion: "+ alumno.getDireccion());
+		
+		if (alumno.getMaterias()!= null) {
+			System.out.println("Materias");
+			alumno.getMaterias().forEach(materia -> {			
+			System.out.println(materia.getNombre().name());
+			System.out.println(materia.getListaNotas().toString());
+		});
+		}
+	});
+}
+
+	@Override
+	public void agregarMateria() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void agregarNota() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void exportarDatos() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void terminarPrograma() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
+}

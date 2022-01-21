@@ -1,0 +1,11 @@
+package servicio;
+
+import java.util.List;
+
+import modelo.Cliente;
+
+public abstract class Exportador extends ArchivoServicio{
+	
+	public abstract void exportar(String fileName , List<Cliente> listaClientes);
+
+}

@@ -1,0 +1,28 @@
+package com.desafiolatam;
+
+import modelos.Alumno;
+import servicios.AlumnoServicio;
+
+public class Main {
+
+	public static void main(String[] args) {
+		AlumnoServicio alumnoServi = new AlumnoServicio();
+		Alumno alumno = new Alumno();
+		
+		alumnoServi.crearAlumno(alumno);
+
+	}
+	
+	public static void menu() {
+
+		System.out.println("----------------");
+		System.out.println("-     MENU     -");
+		System.out.println("----------------");
+		System.out.println("1. Cargar Datos");
+		System.out.println("2. Crear Alumno");
+		System.out.println("3. Agregar Materia");
+		System.out.println("4. Agregar Notas");
+		System.out.println("5. Exportar datos ");
+	}
+
+}

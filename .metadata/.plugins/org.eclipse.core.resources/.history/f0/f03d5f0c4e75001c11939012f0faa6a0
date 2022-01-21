@@ -1,0 +1,43 @@
+package com.desafiolatam.Calculadora2;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.Test;
+
+import Modelo.Calculadora;
+import Servicio.Datos;
+
+public class CalculadoraTest {
+	private Calculadora calculadora = new Calculadora();
+	
+	@Test
+	public int testSumar() {
+		Datos datos = new Datos(5,1);
+		int respuesta = calculadora.sumar(datos);
+		assertEquals(6,respuesta);
+		return respuesta;
+	}
+	@Test
+	public int testRestar() {
+		Datos datos = new Datos(5,1);
+		int respuesta = calculadora.restar(datos);
+		assertEquals(4,respuesta);
+		return respuesta;
+	}
+	
+	@Test
+	public int testMultiplicar() {
+		Datos datos = new Datos(5,1);
+		int respuesta = calculadora.multiplicar(datos);
+		assertEquals(5,respuesta);
+		return respuesta;
+	}
+	
+	@Test
+	public double testDividir() {
+		Datos datos = new Datos(5,1);
+		double respuesta = calculadora.dividir(datos);
+		assertEquals(5,respuesta);
+		return respuesta;
+	}
+
+}

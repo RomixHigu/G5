@@ -1,0 +1,73 @@
+package com.desafiolatam;
+
+import java.util.Scanner;
+
+public class Alumno {
+	private String nombre;
+	private String rut;
+	private String asignatura;
+	private float promedio;
+	
+	public Alumno() {
+		super();
+	}
+
+	public Alumno(String nombre, String rut, String asignatura, float promedio) {
+		super();
+		this.nombre = nombre;
+		this.rut = rut;
+		this.asignatura = asignatura;
+		this.promedio = promedio;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getRut() {
+		return rut;
+	}
+
+	public void setRut(String rut) {
+		this.rut = rut;
+	}
+
+	public String getAsignatura() {
+		return asignatura;
+	}
+
+	public void setAsignatura(String asignatura) {
+		this.asignatura = asignatura;
+	}
+
+	public float getPromedio() {
+		return promedio;
+	}
+
+	public void setPromedio(float promedio) {
+		this.promedio = promedio;
+	}
+
+	@Override
+	public String toString() {
+		return "Alumno: "+ rut +" - "+nombre+"\nMateria: " + asignatura + " - Promedio: " + promedio+ "\n";
+	}
+	
+	public void crearAlumno() {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Ingrese rut del alumno");
+		rut = sc.nextLine();
+		System.out.println("Ingrese Nombre del Alumno");
+		nombre = sc.nextLine();
+		System.out.println("Ingrese Materia");
+		asignatura = sc.nextLine();
+		System.out.println("Ingrese promedio de "+ asignatura);
+		promedio = sc.nextFloat();
+	}
+	
+}

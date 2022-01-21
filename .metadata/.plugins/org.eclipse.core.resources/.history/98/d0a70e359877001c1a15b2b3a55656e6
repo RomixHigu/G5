@@ -1,0 +1,71 @@
+package modelos;
+
+
+import java.util.Scanner;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class Alumno {
+	private String rut;
+	private String nombre;
+	private String apellido;
+	private String direccion;
+	private Set<String> materias;
+		
+	public Alumno() {
+		super();
+		materias = new TreeSet<>();
+	}
+
+	public Alumno(String rut, String nombre, String apellido, String direccion, Set<String> materias) {
+		super();
+		this.rut = rut;
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.direccion = direccion;
+		this.materias = materias;
+		
+	}
+
+	public String getRut() {
+		return rut;
+	}
+
+	public void setRut(String rut) {
+		this.rut = rut;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getApellido() {
+		return apellido;
+	}
+
+	public void setApellido(String apellido) {
+		this.apellido = apellido;
+	}
+
+	public String getDireccion() {
+		return direccion;
+	}
+
+	public void setDireccion(String direccion) {
+		this.direccion = direccion;
+	}
+
+	public Set<String> getMaterias() {
+		return materias;
+	}
+
+	public void setMaterias(Set<String> materias) {
+		this.materias = materias;
+	}
+	
+	
+}

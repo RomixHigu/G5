@@ -1,0 +1,21 @@
+package Modelo;
+
+public class Calculadora {
+	
+	public void sumar() {
+		
+	}
+	
+	public void restar() {
+		
+	}
+	
+	public void dividir() {
+		
+	}
+	
+	public void multiplicar() {
+		
+	}
+
+}

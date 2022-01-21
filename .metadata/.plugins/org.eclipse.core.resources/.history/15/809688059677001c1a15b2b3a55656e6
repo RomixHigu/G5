@@ -1,0 +1,66 @@
+package com.desafiolatam;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.TreeMap;
+
+import modelos.Alumno;
+import modelos.Materia;
+
+public class AlumnoServicio {
+	private Map<String,Alumno> listaAlumnos;
+
+	public AlumnoServicio() {
+		super();
+		listaAlumnos = new TreeMap<>();
+	}
+
+	public AlumnoServicio(Map<String,Alumno> listaAlumnos) {
+		super();
+		this.listaAlumnos = listaAlumnos;
+		//listaProductos = new ArrayList<Producto>();
+	}
+
+	public Map<String,Alumno>  getListaAlumnos() {
+		return listaAlumnos;
+	}
+
+	public void setListaAlumno(Map<String,Alumno> listaAlumnos) {
+		this.listaAlumnos = listaAlumnos;
+	}
+	
+	public void crearAlumno(Alumno alumno) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Ingrese rut del alumno");
+		String rut = sc.nextLine();
+		System.out.println("Ingrese Nombre del Alumno");
+		String nombre = sc.nextLine();
+		System.out.println("Ingrese Materia");
+		String asignatura = sc.nextLine();
+		System.out.println("Ingrese promedio de "+ asignatura);
+		float promedio = sc.nextFloat();
+		
+		alumno.setRut(rut);
+		alumno.setNombre(nombre);
+		alumno.setMaterias(asignatura);
+		alumno.setPromedio(promedio);
+		
+		listaAlumnos.add(alumno);
+		System.out.println("Datos ingresados con exito!");
+	}
+	
+	public void agregarMAteria(String rutAlumno, Materia currentMate) {
+		
+	}
+	
+	public List<Materia> materiasPorAlumno(String rutAlumno) {
+		return List<Materia>;
+	}
+	
+	public Map<String, Alumno> listarAlumnos() {
+		return listaAlumnos;
+	}
+}

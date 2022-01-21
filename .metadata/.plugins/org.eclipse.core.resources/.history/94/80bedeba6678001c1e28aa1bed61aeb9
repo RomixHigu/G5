@@ -1,0 +1,24 @@
+package com.td.desafio.latam.f20220118;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class Main {
+
+   public static void main(String[] args) {
+	   
+	   /** SET */
+	   
+	   Set<String> estudiantes = new HashSet<String>();
+	   
+	   estudiantes.add("Desiree Sotillo");
+	   estudiantes.add("Victor Soto");
+	   estudiantes.add("Luis Sanhueza");
+	   estudiantes.add("Roberto Vasquez");
+	   estudiantes.add("Soledad Silva");
+	   
+	   System.out.println(estudiantes);
+
+   }
+
+}

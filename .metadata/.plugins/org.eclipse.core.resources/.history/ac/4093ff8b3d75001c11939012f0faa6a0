@@ -1,0 +1,27 @@
+package com.desafiolatam.gs_tdd;
+
+import static org.junit.Assert.assertEquals;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+import org.junit.Test;
+
+//en caso de error, cambiar a importacion
+
+import modelos.Persona;
+import repositorio.RepositorioPersona;
+
+public class RepositorioPersonaTest {
+	private RepositorioPersona repositorioPersona = mock(RepositorioPersona.class);
+	
+	@Test
+	public void testCrearPersona() {
+		Persona pepe = new Persona("1234-1","Pepe");
+		when(repositorioPersona.crearPersona(pepe)).thenReturn("OK");
+		when(repositorioPersona.crearPersona(null)).thenThrow(new NullPointerException());
+		String crearPersonaRes = repositorioPersona.crearPersona(pepe);
+		assertEquals("OK", crearPersonaRes);
+		verify(repositorioPersona).crearPersona(pepe);
+	}
+
+}

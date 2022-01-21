@@ -1,0 +1,69 @@
+package vista;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import modelo.Cliente;
+import servicio.ClienteServicio;
+import servicio.ExportadorCsv;
+import servicio.ExportadorTxt;
+
+public class Menu extends MenuTemplate {
+	ClienteServicio clienteServicio = new ClienteServicio();
+	ArchivoServicio archivoServicio = new ArchivoServicio();
+	ExportadorCsv csv = new ExportadorCsv();
+	ExportadorTxt txt = new ExportadorTxt();
+	String fileName="Clientes.txt";
+	String fileName1 = "DBClientes.csv";
+
+
+	@Override
+	public void listarCliente() {		
+		System.out.println(listaCliente);
+		
+	}
+
+	@Override
+	public void agregarCliente(Cliente cliente) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Ingrese RUN del cliente");
+		String run = sc.nextLine();
+		System.out.println("Ingrese nombre del cliente");
+		String nombre = sc.nextLine();
+		System.out.println("Ingrese apellido del cliente");
+		String apellido = sc.nextLine();
+		System.out.println("Ingrese años como cliente");
+		Integer antiguedad = sc.nextInt();
+		
+		
+	}
+
+	@Override
+	public void editarCliente() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void importarDatos() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void exportarDatos() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void terminarPrograma() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	
+}

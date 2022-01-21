@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+C:\FullStack_Java\WorkSpace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2867276523.index
+\jersey-client\src\main\java

@@ -1,0 +1,46 @@
+package com.desafiolatam;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class AlumnoServicio {
+	private ArrayList<Alumno> datosAlumno;
+
+	public AlumnoServicio() {
+		super();
+	}
+
+	public AlumnoServicio(ArrayList<Alumno> datosAlumno) {
+		super();
+		this.datosAlumno = datosAlumno;
+	}
+
+	public ArrayList<Alumno> getDatosAlumno() {
+		return datosAlumno;
+	}
+
+	public void setDatosAlumno(ArrayList<Alumno> datosAlumno) {
+		this.datosAlumno = datosAlumno;
+	}
+	
+	public void crearAlumno(Alumno alumno) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Ingrese rut del alumno");
+		String rut = sc.nextLine();
+		System.out.println("Ingrese Nombre del Alumno");
+		String nombre = sc.nextLine();
+		System.out.println("Ingrese Materia");
+		String asignatura = sc.nextLine();
+		System.out.println("Ingrese promedio de "+ asignatura);
+		float promedio = sc.nextFloat();
+		
+		alumno.setRut(rut);
+		alumno.setNombre(nombre);
+		alumno.setAsignatura(asignatura);
+		alumno.setPromedio(promedio);
+		
+		datosAlumno.add(alumno);
+		System.out.println("Datos ingresados con exito!");
+	}
+}

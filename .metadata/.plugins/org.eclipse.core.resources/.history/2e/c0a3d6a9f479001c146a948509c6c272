@@ -1,0 +1,55 @@
+package modelo;
+
+public class Cliente {
+	private String run;
+	private String nombre;
+	private String apellido;
+	private Integer antiguedad;
+	
+	public Cliente() {
+		super();
+	}
+
+	public Cliente(String run, String nombre, String apellido, Integer antiguedad) {
+		super();
+		this.run = run;
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.antiguedad = antiguedad;
+	}
+
+	public String getRun() {
+		return run;
+	}
+
+	public void setRun(String run) {
+		this.run = run;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getApellido() {
+		return apellido;
+	}
+
+	public void setApellido(String apellido) {
+		this.apellido = apellido;
+	}
+
+	public Integer getAntiguedad() {
+		return antiguedad;
+	}
+
+	public void setAntiguedad(Integer antiguedad) {
+		this.antiguedad = antiguedad;
+	}
+	
+	
+
+}

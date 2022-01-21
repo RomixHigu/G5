@@ -1,0 +1,77 @@
+package vista;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import modelo.Cliente;
+
+public class Menu extends MenuTemplate {
+	private List<Cliente> listaCliente;
+	
+	
+	public Menu() {
+		super();
+		listaCliente = new ArrayList<>();
+	}
+	
+	
+
+	public Menu(List<Cliente> listaCliente) {
+		super();
+		this.listaCliente = listaCliente;
+		listaCliente = new ArrayList<>();
+	}
+
+	
+
+	public List<Cliente> getListaCliente() {
+		return listaCliente;
+	}
+
+
+
+	public void setListaCliente(List<Cliente> listaCliente) {
+		this.listaCliente = listaCliente;
+	}
+
+
+
+	@Override
+	public void listarCliente() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void agregarCliente() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void editarCliente() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void importarDatos() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void exportarDatos() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void terminarPrograma() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	
+}

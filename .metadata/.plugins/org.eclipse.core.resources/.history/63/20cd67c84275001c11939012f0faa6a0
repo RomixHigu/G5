@@ -1,0 +1,30 @@
+package com.desafiolatam.gs_tdd_1;
+
+public class EquipoFutbol {
+	private int partidosGanados;
+
+	public EquipoFutbol() {
+		super();
+	}
+
+	public EquipoFutbol(int partidosGanados) {
+		super();
+		this.partidosGanados = partidosGanados;
+	}
+
+	public int getPartidosGanados() {
+		return partidosGanados;
+	}
+
+	public void setPartidosGanados(int partidosGanados) {
+		this.partidosGanados = partidosGanados;
+	}
+
+	@Override
+	public String toString() {
+		return "EquipoFutbol [partidosGanados=" + partidosGanados + "]";
+	}
+	
+	
+
+}

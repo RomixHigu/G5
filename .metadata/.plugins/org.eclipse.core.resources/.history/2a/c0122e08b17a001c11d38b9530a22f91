@@ -1,0 +1,44 @@
+package servicio;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import modelo.CategoriaEnum;
+import modelo.Cliente;
+
+public class ClienteServicio {
+	private List<Cliente> listaCliente;
+
+	public ClienteServicio() {
+		super();
+		listaCliente = new ArrayList<>();
+	}
+
+	public ClienteServicio(List<Cliente> listaCliente) {
+		super();
+		this.listaCliente = listaCliente;
+		listaCliente = new ArrayList<>();
+	}
+
+	public List<Cliente> getListaCliente() {
+		return listaCliente;
+	}
+
+	public void setListaCliente(List<Cliente> listaCliente) {
+		this.listaCliente = listaCliente;
+	}
+
+	public void retornoListarCliente() {
+		if (listaCliente != null) {
+			for (Cliente cliente : listaCliente) {
+				System.out.println(cliente);
+			}
+		}
+	}
+
+	public void agregarCliente(String run, String nombre, String apellido, Integer antiguedad,
+			CategoriaEnum categoria) {
+
+	}
+
+}

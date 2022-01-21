@@ -1,0 +1,51 @@
+package Modelo;
+
+public class Calculadora {	
+
+
+
+	public int sumar(int numero1, int numero2) {
+		int suma = numero1 + numero2;
+		return suma;
+	}
+	
+	public int restar(int numero1, int numero2) {
+		int resta = numero1 - numero2;
+		return resta;
+	}
+	
+	public int multiplicar(int numero1, int numero2) {
+		int multi =numero1 * numero2;
+		return multi;
+	}
+	public float dividir(int numero1, int numero2) {
+		float div= (float)numero1 / numero2;
+		return div;
+	}
+
+	/*public int restar(Datos datos) {
+		int resta = 0;
+		if (datos.getNumero1() > datos.getNumero2()) {
+			resta = datos.getNumero1() - datos.getNumero2();			
+		} else {
+			resta = datos.getNumero2() - datos.getNumero1();
+		}
+		return resta;
+	}
+
+	public int multiplicar(Datos datos) {
+		int multi = datos.getNumero1() * datos.getNumero2();
+		System.out.println("El resultado de la multiplicacion es: " + multi);
+		return multi;
+	}
+
+	public float dividir(Datos datos) {
+		float div = 0;
+		if (datos.getNumero1() > datos.getNumero2()) {
+			div = (float) (datos.getNumero1() / datos.getNumero2());
+		}else {
+			div = (float)(datos.getNumero2() / datos.getNumero1());
+		}
+		return div;
+	}*/
+}

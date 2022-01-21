@@ -1,0 +1,46 @@
+package com.desafiolatam.gs_tdd_1;
+
+public class EquipoFutbol {
+	private int partidosGanados;
+	private int partidosPerdidos;
+	private int partidosEmpatados;
+
+	public EquipoFutbol(int partidosGanados) {
+		
+	}
+		
+
+	public int getPartidosPerdidos() {
+		return partidosPerdidos;
+	}
+
+
+
+	public void setPartidosPerdidos(int partidosPerdidos) {
+		this.partidosPerdidos = partidosPerdidos;
+	}
+
+
+
+	public int getPartidosEmpatados() {
+		return partidosEmpatados;
+	}
+
+
+
+	public void setPartidosEmpatados(int partidosEmpatados) {
+		this.partidosEmpatados = partidosEmpatados;
+	}
+
+
+
+	public void setPartidosGanados(int partidosGanados) {
+		this.partidosGanados = partidosGanados;
+	}
+
+
+
+	public int getPartidosGanados() {
+		return partidosGanados;
+	}
+}

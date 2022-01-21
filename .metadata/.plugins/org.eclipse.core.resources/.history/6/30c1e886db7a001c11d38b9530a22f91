@@ -1,0 +1,14 @@
+-------------------Datos del Cliente-------------------
+RUN: 123-4
+Nombre: romina
+Apellido: gaete
+Años como Cliente: 1
+Categoria del Cliente: ACTIVO
+
+-------------------Datos del Cliente-------------------
+RUN: 1452-4
+Nombre: alba
+Apellido: gaete
+Años como Cliente: 2
+Categoria del Cliente: ACTIVO
+

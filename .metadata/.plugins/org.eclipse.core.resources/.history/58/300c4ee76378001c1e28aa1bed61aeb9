@@ -1,0 +1,17 @@
+package vistas;
+
+public abstract class MenuTemplate {
+	
+	public abstract void cargarDatos();
+
+	public abstract void crearAlumno();
+	
+	public abstract void agregarMateria();
+	
+	public abstract void agregarNota();
+	
+	public abstract void exportarDatos();
+	
+	public abstract void TerminarPrograma();
+	
+}

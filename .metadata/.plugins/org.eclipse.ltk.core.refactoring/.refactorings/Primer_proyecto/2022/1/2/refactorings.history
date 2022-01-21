@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ColeccionesSet.java&apos; to &apos;Primer_proyecto/src/com.td.desafio.latam.f20220103&apos;&#x0D;&#x0A;- Original project: &apos;Primer_proyecto&apos;&#x0D;&#x0A;- Destination element: &apos;Primer_proyecto/src/com.td.desafio.latam.f20220103&apos;&#x0D;&#x0A;- Original element: &apos;com.td.desafio.latam.f20220103.models.ColeccionesSet.java&apos;" description="Copy compilation unit" destination="/src&lt;com.td.desafio.latam.f20220103" element1="/src&lt;com.td.desafio.latam.f20220103.models{ColeccionesSet.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1641234849136" units="1" version="1.0"/>
+</session>

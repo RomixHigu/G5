@@ -1,0 +1,5 @@
+package com.td.desafio.latam.f20220118.models;
+
+public class Estudiante {
+
+}

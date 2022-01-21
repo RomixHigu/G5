@@ -1,0 +1,32 @@
+package com.td.desafio.latam.f20220118;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import com.td.desafio.latam.f20220118.models.Estudiante;
+
+public class ObjetosMain {
+
+	public static void main(String[] args) {
+		Set<Estudiante> estudiantes = new HashSet<Estudiante>();
+		
+		Estudiante estudiante1 = new Estudiante("Patricio","Tenorio");
+		Estudiante estudiante2 = new Estudiante("Desiree","Sotillo");
+		Estudiante estudiante3 = new Estudiante("Francisco","Sepulveda");
+		Estudiante estudiante4 = new Estudiante("Soledad","Silva");
+		Estudiante estudiante5 = new Estudiante("Pablo","Romero");
+		
+		estudiantes.add(estudiante1);
+		estudiantes.add(estudiante2);
+		estudiantes.add(estudiante3);
+		estudiantes.add(estudiante4);
+		estudiantes.add(estudiante5);
+		estudiantes.add(estudiante3);
+		
+		System.out.println(estudiantes);
+		
+		
+
+	}
+
+}
